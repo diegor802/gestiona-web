@@ -1,0 +1,269 @@
+*{
+	box-sizing: border-box;
+	margin:  0;
+	padding: 0;
+	
+}
+
+body{
+	/* background: #0a558b; */
+	/* background: #f2f2f2; */
+	background: #fff;
+
+	margin: 0 auto;
+	font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	height: 700px;
+	background: #0a558b;
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	padding: 0 150px;
+
+}
+
+header h1{ 
+	font-size: 72pt;
+	line-height: 1;
+	margin: 0;
+}
+
+header p{
+	font-size: 18pt;
+	padding: 30px;
+}
+
+/* NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS NOSOTROS */
+
+.contenedor-about{
+	display:flex;
+	gap: 150px;
+	align-items: center;
+	padding: 100px;
+}
+
+.contenedor-about h2{
+	font-size: 40pt;
+	padding-bottom: 25px;
+}
+
+.image-about{
+	width: 840px;
+	height: 500px;
+	overflow: hidden;
+	display: block;
+	flex: 1;
+}
+
+.image-about img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.text-about{
+	flex: 1.2;
+	font-size: 13pt;
+}
+
+
+.contenedor-corporativo{
+	padding: 100px;
+	display: flex;
+	flex-direction: row-reverse;
+	
+}
+
+.text-corporativo{
+	flex: 1.2;
+	text-align: right;
+}
+
+.text-corporativo h3{
+	font-size: 40pt;
+	padding-bottom: 25px;
+}
+
+
+.image-corporativo{
+	display: block;
+	flex: 1;
+}
+
+/* MODALIDADES MODALIDADES MODALIDADES MODALIDADES MODALIDADES */
+
+
+.modalidades{
+	padding: 100px;
+}
+
+
+.modalidades__title{
+	font-size: 40pt;
+	
+}
+
+.modalidades__grid {
+	display: flex;
+	flex-direction: column;
+
+	gap: 40px;
+	margin: 50px 100px;
+}
+
+.modalidad-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 30px;
+	gap: 30px;
+	border-radius: 15px;
+	border: 4px solid #0a558b;
+}
+
+.modalidad-card__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	width: 120px;
+	text-align: center;
+}
+
+.modalidad-card__icon {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
+	object-fit: contain;
+}
+
+.modalidad-card__title{
+	font-size: 18pt;
+	white-space: nowrap;
+}
+
+.modalidad-card__content{
+	flex: 1;
+	text-align: left;
+	line-height: 1.6;
+}
+
+/* CURSOS CURSOS CURSOS CURSOS CURSOS CURSOS CURSOS */
+
+.box-cards h2{
+	font-size: 40pt;
+}
+
+.box-cards h2,
+.box-cards p {
+	text-align: center;
+}
+
+.box-cards p {
+	padding-bottom: 40px;
+	font-size: 13pt; 
+}
+
+.cards{   /* GRUPO */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	max-width: 1400px;
+	margin: 0 auto;
+
+}
+
+.card{   /* INDIVUDUAL */
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.card-tag{
+	padding-bottom: 20px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+.green_tag_card{
+	background-color: #49cc2a;
+	margin-right: 5px;
+	
+}
+
+.yellow_tag_card{
+	background-color: #feca57;
+}
+
+.yellow_tag_card,
+.green_tag_card{
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-size: small;
+	font-weight: 500;
+}
+
+.card-image {
+	width: 100%;
+	aspect-ratio: 1/1; 
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.5) inset;
+}
+
+.card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-content{
+	flex-grow: 1;
+	display:  flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.card h3{
+	margin-bottom: auto;
+	padding: 20px 0;
+	font-weight: 600;
+}
+
+.card button{
+	background-color: #3498db;
+	border:none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12pt;
+}
+
+button:hover{
+	background-color: #000;
+}
