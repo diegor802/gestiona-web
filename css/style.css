@@ -64,9 +64,11 @@ h4 {
 /* ----- NAV: menu (mobile) ----- */
 .nav__menu {
 	list-style: none;
+	
 	display: none;
 	flex-direction: column;
 	background-color: #0a558b;
+	width: 100%;
 	padding: 1rem;
 	gap: 1rem;
 
@@ -281,20 +283,6 @@ h4 {
 
 @media (min-width: 768px) {	
 	
-	/* Ocultar hamburguesa */
-	.nav__toggle {
-		display: none;
-	}
-
-	/* Menú horizontal */
-	.nav__menu {
-		display: flex;
-		flex-direction: row;
-		gap: 25px;
-		background-color: transparent;
-		padding: 0;
-	}
-
 	/* About us */
 
 	.aboutus {
@@ -347,6 +335,29 @@ h4 {
 
 @media (min-width: 1024px) {
 
+	/* Ocultar hamburguesa */
+	.nav__toggle {
+		display: none;
+	}
+
+	.nav{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.nav__menu{
+		display: flex;
+		flex-direction: row;
+		gap: 25px;
+		background-color: transparent;
+		width: auto;
+	}
+
+	.nav.toggle {
+		display: none;
+	}
+	
+	
 	.aboutus{
 		display: flex;
 		flex-direction: row;
