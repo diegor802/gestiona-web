@@ -340,6 +340,7 @@ h4 {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: nowrap;
+		padding: 20px 80px
 	}
 	
 	.nav__menu {
@@ -349,7 +350,7 @@ h4 {
 		gap: 25px;
 		width: auto;
 		background-color: transparent;
-		width: auto;
+		align-items: center;
 	}
 	
 	/* Ocultar hamburguesa */
@@ -357,6 +358,29 @@ h4 {
 		display: none;
 	}
 	
+	.nav__menu a.btn__campus{
+		display: inline-block;
+		background-color: #fff;
+		padding: 10px 30px;
+		border-radius: 50px;
+		font-weight: 500;
+		color: #0a558b;
+		text-decoration: none;
+
+		transition: 
+			background-color 0.3 ease,
+			color 0.3 ease,
+			transform 0.25s ease,
+			box-shadow 0.25 ease; 
+	}
+
+	.nav__menu a.btn__campus:hover{
+		background-color: #121212;
+		color: #fff;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+	}
+
 	.aboutus{
 		display: flex;
 		flex-direction: row;
