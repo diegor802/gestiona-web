@@ -94,7 +94,14 @@ h4 {
 	color: #fff;
 	padding: 2rem 1rem;
 	text-align: center;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+
 
 /* ----- About Us ----- */
 
@@ -334,7 +341,6 @@ h4 {
 ==============================*/
 
 @media (min-width: 1024px) {
-
 	
 	.nav {
 		display: flex;
@@ -381,11 +387,17 @@ h4 {
 		box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 	}
 
+
+	/* SOBRE NOSOTROS    SOBRE NOSOTROS    SOBRE NOSOTROS    */
+
 	.aboutus{
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		align-items: flex-start;
 		gap: 3rem;
+		margin: 0 auto;
+		max-width: 1200px;
 	}
 	
 	.aboutus__text{
