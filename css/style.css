@@ -335,28 +335,27 @@ h4 {
 
 @media (min-width: 1024px) {
 
+	
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+	
+	.nav__menu {
+		position: static;
+		display: flex;
+		flex-direction: row;
+		gap: 25px;
+		width: auto;
+		background-color: transparent;
+		width: auto;
+	}
+	
 	/* Ocultar hamburguesa */
 	.nav__toggle {
 		display: none;
 	}
-
-	.nav{
-		display: flex;
-		flex-direction: row;
-	}
-	
-	.nav__menu{
-		display: flex;
-		flex-direction: row;
-		gap: 25px;
-		background-color: transparent;
-		width: auto;
-	}
-
-	.nav.toggle {
-		display: none;
-	}
-	
 	
 	.aboutus{
 		display: flex;
