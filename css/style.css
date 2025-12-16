@@ -17,6 +17,7 @@ body {
 	font-weight: 400;
 	color: #121212;
 	margin: 0;
+	font-size: 1.1rem;
 }
 
 h1,
@@ -160,11 +161,14 @@ h4 {
 	border-radius: .5rem;
 }
 
+.modalidades{
+	margin: 100px 50px;
+	padding: 1.25rem;
+}
 
 
 /* =========================================================
    5) COMPONENTES (buttons, cards...) 
-   (aún no tienes componentes definidos fuera de nav/hero)
 ========================================================= */
 
 .btn {
@@ -296,7 +300,7 @@ h4 {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 40px;
-		margin: 100px 50px;
+		/* margin: 100px 50px; */
 		background-color: aquamarine;
 	}
 
@@ -389,13 +393,13 @@ h4 {
 
 
 	/* SOBRE NOSOTROS    SOBRE NOSOTROS    SOBRE NOSOTROS    */
-
+	
 	.aboutus{
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		align-items: flex-start;
 		gap: 3rem;
+		padding-top: 50px;
 		margin: 0 auto;
 		max-width: 1200px;
 	}
@@ -403,24 +407,38 @@ h4 {
 	.aboutus__text{
 		flex: 0 0  60%;
 		text-align: left;
-		font-size: 1.1rem;
+		/* font-size: 1.1rem; */
 	}
-
+	
 	.aboutus__title{
 		font-size: 3.33rem;
 		text-align: left;
 	}
-
+	
 	.img__aboutus{
 		flex: 0 0 40%;
 		object-fit: contain;
 	}
-
+	
 	.img__aboutus img{
 		width: 600px;
 	}
-
 	
+	/* CORPORATIVOS    CORPORATIVOS    CORPORATIVOS    */
+	
+	.corporation{
+		margin: 0 auto;
+		max-width: 1200px;
+		/* font-size: 1.1rem */
+	}
+	
+	/* MODALIDADES    MODALIDADES    MODALIDADES    */
+	
+	.modalidades{
+		/* margin: 0 auto; */
+		padding: 1.25rem;
+	}
+
 
 
 }
