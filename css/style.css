@@ -166,9 +166,57 @@ h4 {
 	padding: 1.25rem;
 }
 
+/* ---- Clientes ----- */
+
+/* .clientes__grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(1400px, 1fr));
+	gap: 2rem;
+	align-items: center;	
+}
+
+.cliente{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cliente img{
+	max-width: 100%;
+	max-height: 60px;
+	object-fit: contain;
+} */
+
+.clientes__grid {
+	display: flex;
+	gap: 1.5rem;
+	overflow: auto;
+	align-items: center;
+	background-color: aquamarine;
+}
+
+.cliente {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* .cliente img {
+	max-height: 50px;
+	width: auto;
+	object-fit: contain;
+} */
+
+.cliente img {
+	max-width: 100%;
+	max-height: 80px;
+	object-fit: contain;
+}
+
 
 /* =========================================================
-   5) COMPONENTES (buttons, cards...) 
+	5) COMPONENTES (buttons, cards...) 
 ========================================================= */
 
 .btn {
@@ -301,7 +349,7 @@ h4 {
 		align-items: flex-start;
 		gap: 40px;
 		/* margin: 100px 50px; */
-		background-color: aquamarine;
+		/* background-color: aquamarine; */
 	}
 
 	.img__aboutus {
@@ -325,7 +373,7 @@ h4 {
 		align-items: flex-start;
 		gap: 40px;
 		margin: 100px 50px;
-		background-color: aquamarine;
+		/* background-color: aquamarine; */
 	}
 
 	/*Card con contadores*/
@@ -336,6 +384,19 @@ h4 {
 
 	.stats__number{
 		font-size: 3.5rem;
+	}
+
+	/* Clientes */
+
+	.clientes__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		overflow: visible;
+		justify-content: center;
+	}
+
+	.cliente img{
+		max-height: 70px;
 	}
 
 }
@@ -438,7 +499,16 @@ h4 {
 		/* margin: 0 auto; */
 		padding: 1.25rem;
 	}
+	
+	/* CLIENTES    CLIENTES    CLIENTES    */
 
+	.clientes_grid{
+		grid-template-columns: repeat(auto-fit, min(140px, 1fr));
+		gap: 2.5rem;
+	}
 
+	.cliente img{
+		max-height: 90px;
+	}
 
 }
