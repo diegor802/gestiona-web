@@ -1,30 +1,9 @@
-	const toggle = document.getElementById("nav-toggle");
+const toggle = document.getElementById("nav-toggle");
 	const menu = document.getElementById("nav-menu");
 
 	toggle.addEventListener("click", () => {
 		menu.classList.toggle("active");
 	});
-
-
-// 	gsap.registerPlugin(ScrollTrigger);
-
-// document.querySelectorAll('.counter__number').forEach((num) => {
-// 	const target = +num.dataset.target;
-
-// 	gsap.fromTo(num, 
-// 		{ textContent: 0 },
-// 		{
-// 		textContent: target,
-// 		duration: 2,
-// 		ease: "power1.out",
-// 		snap: { textContent: 1 },
-// 		scrollTrigger: {
-// 			trigger: num,
-// 			start: "top 80%",
-// 		}
-// 		}
-// 	);
-// 	});
 
 /* ============== Contadores de la Card ==================*/
 
@@ -66,3 +45,13 @@ const statsObserver = new IntersectionObserver (entries =>{
 });
 
 statsObserver.observe(document.querySelector('.stats-card'));
+
+/* ============== ACCIÓN DE LAS FLECHAS (LOGOS) ==================*/
+
+const toggleBtn = document.querySelector(".clientes__toggle");
+const logosGrid = document.querySelector(".clientes__grid");
+
+toggleBtn.addEventListener("click", () => {
+	logosGrid.classList.toggle("is-open");
+	toggleBtn.classList.toggle("is-rotated");
+});
