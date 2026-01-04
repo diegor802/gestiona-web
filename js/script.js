@@ -55,3 +55,5 @@ toggleBtn.addEventListener("click", () => {
 	logosGrid.classList.toggle("is-open");
 	toggleBtn.classList.toggle("is-rotated");
 });
+
+
