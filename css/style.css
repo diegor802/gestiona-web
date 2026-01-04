@@ -166,9 +166,21 @@ h4 {
 	padding: 1.25rem;
 }
 
+.modalidad-card__icon{
+	background-color: #0a558b;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.modalidad-card__icon img{
+	width: 100%;
+	height: 100%;
+}
+
 /* ---- Clientes ----- */
-
-
 
 .clientes__grid {
 	display: grid;
