@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	const statsCard = document.querySelector(".stats-card");
+	const statsCard = document.querySelector(".stats");
 
 	if (statsCard) {
 		const statsObserver = new IntersectionObserver((entries) => {
