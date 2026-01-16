@@ -118,16 +118,6 @@ h4 {
 
 /* ----- HERO ----- */
 .hero {
-	/* background-color: #0a558b;
-	color: #fff;
-	padding: 2rem 1rem;
-	text-align: center;
-	height: 450px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
-
 	position: relative;
 	min-height: 450px;
 	padding: 2rem 1.25rem;
@@ -562,17 +552,19 @@ hero::before{
 
 
 .footer{
-	background-color: #0a558b;
+	
 	color: #fff;
 	padding-top: 3rem;
 
-	background: linear-gradient(
+		background: linear-gradient(
 		to bottom,
 		#0a558b 0%,
 		#0c6bb0 100%
 	);
 	color: #fff;
 	padding-top: 3rem;
+
+	
 }
 
 .footer__container{
@@ -584,6 +576,21 @@ hero::before{
 	gap: 2rem;
 }
 
+.footer__item{
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+	margin-bottom: .35rem;
+	color: #e3e3e3;
+}
+
+.footer__item svg{
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+	flex-shrink: 0;
+}
+
 .footer h4{
 	font-size: 1rem;
 	margin-bottom: .75rem;
@@ -592,11 +599,12 @@ hero::before{
 .footer a{
 	color: #fff;
 	text-decoration: none;
-	opacity: .85;
+	opacity: .9;
 }
 
 .footer a:hover{
 	opacity: 1;
+	text-decoration: underline;
 }
 
 .footer__brand img{
@@ -605,6 +613,7 @@ hero::before{
 }
 
 .footer__bottom{
+	background: rgba(0,0,0,.1);
 	margin-top: 3rem;
 	padding: 1rem 1.25rem;
 	border-top: 1px solid rgba(255,255,255,.2);
@@ -914,7 +923,7 @@ hero::before{
 		max-height: 100px;
 	}
 
-/* Partners */
+	/* Partners */
 
 	.partners{
 		padding: 3.5rem 2rem;
@@ -927,6 +936,9 @@ hero::before{
 		position: relative;
 		padding: 3rem 2rem 4rem;	
 	}
+
+	
+	/* Footer */
 
 	.footer__container{
 		flex-direction: row;
@@ -1032,7 +1044,7 @@ hero::before{
 	}
 	
 	.aboutus__title{
-		font-size: 3.33rem;
+		/* font-size: 3.33rem; */
 		text-align: left;
 	}
 	
