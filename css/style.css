@@ -28,7 +28,7 @@ h4 {
 }
 
 /* =========================================================
-   4) LAYOUT: HEADER, NAV, HERO, aboutus
+   4) LAYOUT: HEADER, NAV, HERO, ABOUT US
 ========================================================= */
 
 	h1 {
@@ -115,6 +115,16 @@ h4 {
 .nav__toggle{
 	color: #ffffff;
 }
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ==============================
+		COMIENZO DE INICIO
+================================= */
+
 
 /* ----- HERO ----- */
 .hero {
@@ -622,9 +632,49 @@ hero::before{
 	opacity: .8;
 }
 
+/* ==============================
+		COMIENZO DE CONTACTO
+================================= */
+
+.contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto h1 {
+  margin-bottom: 1rem;
+}
+
+.contacto p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.telefono,
+.correo {
+  margin-top: 1rem;
+}
+
+
+
 /* =========================================================
 	5) COMPONENTES (buttons, cards...) 
 ========================================================= */
+
+/* ==============================
+		COMIENZO DE INICIO
+================================= */
 
 .btn {
 	display: inline-block;
@@ -749,7 +799,58 @@ hero::before{
 	flex: 1;
 }
 
+/* ===== CONTACTO - FORMULARIO ===== */
 
+.contacto-formulario {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.contacto-formulario h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-formulario p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.contacto-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+  padding: 0.75rem;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contacto-formulario textarea {
+  min-height: 120px;
+}
+
+.contacto-formulario button {
+  align-self: flex-start;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mensaje-confianza {
+  display: block;
+  margin-top: 0.75rem;
+  color: #666;
+  font-size: 0.85rem;
+}
 
 /* =========================================================
    6) UTILIDADES 
@@ -759,6 +860,10 @@ hero::before{
 /* =========================================================
    7) MEDIA QUERIES
 ========================================================= */
+
+/* ==============================
+		COMIENZO DE INICIO
+================================= */
 
 /*============================
 	TABLET
@@ -952,6 +1057,10 @@ hero::before{
 /*============================
 	DESKTOP
 ==============================*/
+
+/* ==============================
+		COMIENZO DE INICIO
+================================= */
 
 @media (min-width: 1024px) {
 	
@@ -1172,4 +1281,3 @@ hero::before{
 		height: 80px;
 	}
 }
-
